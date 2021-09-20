@@ -1,0 +1,101 @@
+{
+    "products": [{
+            "id": 1,
+            "name": "Harmony Lumaflex Strength Band Kit",
+            "price": 22,
+            "img": "https://luma.enablementadobe.com/content/dam/luma/en/products/gear/fitness-equipment/ug03-bk-0.jpg"
+
+        },
+        {
+            "id": 2,
+            "name": "Zeppelin Yoga Pant",
+            "price": 65.60,
+            "img": "https://luma.enablementadobe.com/content/dam/luma/en/products/men/bottoms/pants/mp08-green_main.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Autumn Pullie",
+            "price": 57,
+            "img": "https://luma.enablementadobe.com/content/luma/us/en/products/women/tops/hoodies/autumn-pullie/_jcr_content/root/product/assets/asset.img.jpg/libs/settings/wcm/designs/default/-/page/root/responsivegrid/productgrid/item/asset/cq_ck_1573092217740.jpg"
+        },
+        {
+            "id": 4,
+            "name": "Logan HeatTec Tee",
+            "price": 24,
+            "img": "https://luma.enablementadobe.com/content/dam/luma/en/products/men/tops/tees/ms10-blue_main.jpg"
+        },
+        {
+            "id": 5,
+            "name": "Nadia Elements Shell",
+            "price": 69,
+            "img": "https://luma.enablementadobe.com/content/luma/us/en/products/women/tops/jackets/nadia-elements-shell/_jcr_content/root/product/assets/asset.img.jpg/libs/settings/wcm/designs/default/-/page/root/responsivegrid/productgrid/item/asset/cq_ck_1573092221580.jpg"
+
+        },
+        {
+            "id": 6,
+            "name": "Mach Street Sweattshirt",
+            "price": 62,
+            "img": "https://luma.enablementadobe.com/content/luma/us/en/products/men/tops/hoodies_sweatshirts/mach-street-sweatshirt/_jcr_content/root/product/assets/asset.img.jpg/libs/settings/wcm/designs/default/-/page/root/responsivegrid/productgrid/item/asset/cq_ck_1573092193987.jpg"
+
+        }
+
+    ],
+
+    "catalogs": [{
+        "id": 1,
+        "name": "Women",
+        "details": "View our women's catalog",
+        "img": "https://luma.enablementadobe.com/content/luma/us/en/_jcr_content/root/responsivegrid/categoryteaser_copy.coreimg.82.512.png"
+
+    }, {
+        "id": 2,
+        "name": "Men",
+        "details": "View our men's catalog",
+        "img": "https://luma.enablementadobe.com/content/luma/us/en/_jcr_content/root/responsivegrid/categoryteaser_copy_1774714788.coreimg.82.512.jpeg"
+
+    }, {
+        "id": 3,
+        "name": "Equipment",
+        "details": "View all our best gear",
+        "img": "https://luma.enablementadobe.com/content/luma/us/en/_jcr_content/root/responsivegrid/categoryteaser.coreimg.82.512.jpeg"
+
+    }],
+    "text": [{
+        "id": 1,
+        "name": "Free delivery",
+        "details": "And free return",
+        "icon": "fas fa-shopping-cart"
+
+    }, {
+        "id": 2,
+        "name": "Orden Tracking",
+        "details": "Worldwide shipping",
+        "icon": "fas fa-compass"
+
+    }, {
+        "id": 3,
+        "name": "Online support",
+        "details": "With our outdoor specialist",
+        "icon": "fas fa-headset"
+
+    }],
+    "stories": [{
+        "id": 1,
+        "name": "Begginers Luck",
+        "img": "https://luma.enablementadobe.com/content/luma/us/en/experience/beginners-luck/_jcr_content/root/hero_image.coreimg.jpeg"
+
+    }, {
+        "id": 2,
+        "name": "Warming Up",
+        "img": "https://luma.enablementadobe.com/content/luma/us/en/experience/warming-up/_jcr_content/root/hero_image.coreimg.jpeg"
+
+    }, {
+        "id": 3,
+        "name": "Keep Moving",
+        "img": "https://luma.enablementadobe.com/content/luma/us/en/experience/keep-moving/_jcr_content/root/hero_image.coreimg.jpeg"
+
+
+    }]
+
+
+}

@@ -1,0 +1,79 @@
+.subHeader {
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.subHeader ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0px;
+    padding-inline-start: 0px;
+    margin-bottom: 0px;
+}
+
+.subHeader li {
+    list-style: none;
+    margin: 0px 20px 0px 20px;
+    min-width: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.subHeader a {
+    text-decoration: none;
+    color: #666;
+    font-weight: 780;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.subHeader a:hover {
+    text-decoration: underline;
+}
+
+ul li ul {
+    display: none;
+}
+
+ul li:hover>ul {
+    display: flex;
+    position: absolute;
+    left: 380px;
+    top: 100px;
+    flex-wrap: wrap;
+    width: 1000px;
+    background-color: rgba(216, 216, 216);
+    border: 1px solid black;
+    padding: 10px 10%;
+    width: 60%;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px 10%;
+}
+
+ul li .blog li {
+    margin: 0px 70px;
+    text-transform: none;
+}
+
+ul li .about-us li {
+    margin: 0px 50px;
+}
+
+ul li .products li {
+    margin: 0px 100px
+}
+
+ul li .community li {
+    margin: 0px 30px;
+}

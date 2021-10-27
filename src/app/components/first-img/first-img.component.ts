@@ -6,10 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./first-img.component.scss']
 })
 export class FirstImgComponent implements OnInit {
-  shopNowTextButton= "Shop Now";
+  img!:string
   constructor() { }
 
   ngOnInit(): void {
+    this.img= "assets/mainImage.png"
   }
 
 }

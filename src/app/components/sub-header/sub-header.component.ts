@@ -7,15 +7,11 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class SubHeaderComponent implements OnInit {
 img!:string
-
-
-
-
+  
   constructor() { }
-
+  
   ngOnInit(): void {
     this.img= "assets/logo.png"
     
   }
-
 }

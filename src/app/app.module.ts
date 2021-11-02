@@ -10,11 +10,17 @@ import { MiddleTextComponent } from './components/middle-text/middle-text.compon
 import { HttpClientModule } from '@angular/common/http';
 import { CatalogComponent } from './components/catalogs/catalog/catalog.component';
 import { CatalogsComponent } from './components/catalogs/catalogs/catalogs.component';
+import { TextComponent } from './components/second-middle-text/text/text.component';
+import { SecondMiddleTextComponent } from './components/second-middle-text/second-middle-text/second-middle-text.component';
+import { ThirdMiddleTextComponent } from './components/third-middle-text/third-middle-text.component';
+import { ProductComponent } from './components/products/product/product.component';
+import { ProductsComponent } from './components/products/products/products.component';
 import { FourthMiddleTextComponent } from './components/fourth-middle-text/fourth-middle-text.component';
 import { StoriesComponent } from './components/stories/stories/stories.component';
 import { StorieComponent } from './components/stories/storie/storie.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ButtonComponent } from './components/button/button.component';
+
 
 
 @NgModule({
@@ -26,11 +32,22 @@ import { ButtonComponent } from './components/button/button.component';
     MiddleTextComponent,
     CatalogComponent,
     CatalogsComponent,
+    TextComponent,
+    SecondMiddleTextComponent,
+    ThirdMiddleTextComponent,
+    ProductComponent,
+    ProductsComponent,
     FourthMiddleTextComponent,
     StoriesComponent,
     StorieComponent,
     FooterComponent,
     ButtonComponent
+    
+    
+    
+    
+
+    
   ],
   imports: [
     BrowserModule,

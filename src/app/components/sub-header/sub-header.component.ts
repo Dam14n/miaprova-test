@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-sub-header',
@@ -6,9 +6,9 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./sub-header.component.scss']
 })
 export class SubHeaderComponent implements OnInit {
-logo= "assets/logo.png"
+  logo= "assets/logo.png"
   
-constructor() { }
+  constructor() { }
   
   ngOnInit(): void {
   }

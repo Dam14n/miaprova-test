@@ -21,17 +21,17 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-node-    
     - name: Build
-      run: |
+     run: |
         npm install
-        npm run build --prod
-    # - name: Deploy
-    #   uses: JamesIves/github-pages-deploy-action@releases/v3
-    #   with:
-    #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    #     BRANCH: gh-pages
-    #     FOLDER: dist/angular-ci-cd
+        npm run-script deploy
     - name: Deploy
-      run: |
-        ng deploy --base-href=https://Dam14n.github.io/miaprova-test/
+      uses: JamesIves/github-pages-deploy-action@releases/v3
+      with:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        BRANCH: gh-pages
+        FOLDER: dist/angular-ci-cd
+    # - name: Deploy
+    #   run: |
+    #     ng deploy --base-href=https://Dam14n.github.io/miaprova-test/
 
     

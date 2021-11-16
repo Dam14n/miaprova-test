@@ -6,10 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sub-header.component.scss']
 })
 export class SubHeaderComponent implements OnInit {
-
+  logo= "assets/logo.png"
+  
   constructor() { }
-
+  
   ngOnInit(): void {
   }
-
 }

@@ -43,21 +43,23 @@
 
     "catalogs": [{
         "id": 1,
-        "name": "Women",
-        "details": "View our women's catalog",
-        "img": "https://luma.enablementadobe.com/content/luma/us/en/_jcr_content/root/responsivegrid/categoryteaser_copy.coreimg.82.512.png"
+        "name": "Chrome Extension",
+        "img": "assets/chromeExtension.png",
+        "link": "https://www.miaprova.com/blog/adobe-target-chrome-extension-brought-to-you-by-miaprova/"
+
+
 
     }, {
         "id": 2,
-        "name": "Men",
-        "details": "View our men's catalog",
-        "img": "https://luma.enablementadobe.com/content/luma/us/en/_jcr_content/root/responsivegrid/categoryteaser_copy_1774714788.coreimg.82.512.jpeg"
+        "name": "Youtube",
+        "img": "assets/followUsOnYoutube.png",
+        "link": "https://www.youtube.com/channel/UCdm5r7ZVgyYfaMQvuOvqVlA"
 
     }, {
         "id": 3,
-        "name": "Equipment",
-        "details": "View all our best gear",
-        "img": "https://luma.enablementadobe.com/content/luma/us/en/_jcr_content/root/responsivegrid/categoryteaser.coreimg.82.512.jpeg"
+        "name": "Linkedin",
+        "img": "assets/followUsOnLinkedin.png",
+        "link": "https://www.linkedin.com/company/miaprova"
 
     }],
     "text": [{

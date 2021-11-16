@@ -1,12 +1,5 @@
 <div class="catalog-container">
     <div class="catalog">
-        <img src="{{catalog.img}}">
-
-        <h2> {{catalog.details}}</h2>
-        <!-- <a class="btn btn-primary btn-action button" href="#" role="button"> {{catalog.name}} </a> -->
-        <app-button [text]="catalog.name"></app-button>
-
-
-
+        <a href="{{catalog.link}}" target="_blank"> <img [src]="catalog.img"> </a>
     </div>
 </div>

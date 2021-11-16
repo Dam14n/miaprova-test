@@ -1,3 +1,6 @@
+# First Run API
+Run `npm run serverAPI` for to initialize the API so that all the components of the page work correctly.
+
 # MyApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.5.

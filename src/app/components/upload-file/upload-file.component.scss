@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+    margin: 10px;
+}
+
+form {
+    width: 400px;
+    padding: 30px;
+    background: #24303c;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 5px;
+}
+
+label {
+    color: white;
+    margin-right: 10px;
+}
+
+input {
+    color: black;
+}

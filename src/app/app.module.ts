@@ -20,6 +20,9 @@ import { StoriesComponent } from './components/stories/stories/stories.component
 import { StorieComponent } from './components/stories/storie/storie.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ButtonComponent } from './components/button/button.component';
+import { UploadFileComponent } from './components/upload-file/upload-file.component';
+import { HomeComponent } from './components/home/home.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -41,7 +44,10 @@ import { ButtonComponent } from './components/button/button.component';
     StoriesComponent,
     StorieComponent,
     FooterComponent,
-    ButtonComponent
+    ButtonComponent,
+    UploadFileComponent,
+    HomeComponent,
+  
     
     
     
@@ -53,6 +59,8 @@ import { ButtonComponent } from './components/button/button.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    ReactiveFormsModule,
+  
   ],
   providers: [],
   bootstrap: [AppComponent]

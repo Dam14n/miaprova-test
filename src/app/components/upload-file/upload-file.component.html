@@ -1,0 +1,30 @@
+<div class="form-container">
+    <form [formGroup]="form" class="form">
+        <div>
+            <label for="name"> Name</label>
+            <input type="text" id="name" formControlName="name">
+        </div>
+
+        <div>
+            <label for="email"> Email</label>
+            <input type="text" id="email" formControlName="email">
+        </div>
+
+        <div>
+            <label for="password"> Password</label>
+            <input type="password" id="password" formControlName="password" minlength="6">
+        </div>
+
+        <div>
+            <input type="file" formControlName="file" (change)="captureFile($event)">
+        </div>
+
+        <div>
+            <button [disabled]="form.invalid" (click)="uploadFile()">Send</button>
+        </div>
+
+    </form>
+    <div>
+        Valido: {{form.valid | json}}
+    </div>
+</div>

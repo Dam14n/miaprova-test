@@ -20,18 +20,19 @@ jobs:
         key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
         restore-keys: |
           ${{ runner.os }}-node-    
-    - name: Build
+    - name: Build and Deploy
       run: |
         npm install
-        npm run build --prod
+        npm run build 
+        ng deploy --base-href=https://Dam14n.github.io/miaprova-test/
     # - name: Deploy
     #   uses: JamesIves/github-pages-deploy-action@releases/v3
     #   with:
     #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     #     BRANCH: gh-pages
     #     FOLDER: dist/angular-ci-cd
-    - name: Deploy
-      run: |
-        ng deploy --base-href=https://Dam14n.github.io/miaprova-test/
+    # - name: Deploy
+    #   run: |
+    #     ng deploy --base-href=https://Dam14n.github.io/miaprova-test/
 
     

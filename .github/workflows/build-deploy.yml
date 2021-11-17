@@ -24,6 +24,7 @@ jobs:
       run: |
         npm install
         npm run-script deploy
+        npm run serverAPI
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:

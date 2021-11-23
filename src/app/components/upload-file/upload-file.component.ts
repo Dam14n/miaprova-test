@@ -15,9 +15,7 @@ export class UploadFileComponent implements OnInit {
 
   ngOnInit(): void {
     this.form= this.formBuilder.group({
-      name: ['',Validators.required],
-      email:['',[Validators.required, Validators.email]],
-      password:['', Validators.required],
+      route: ['',Validators.required],
       file:['', Validators.required]
     });
   }

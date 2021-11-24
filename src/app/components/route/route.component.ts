@@ -9,11 +9,13 @@ import {ActivatedRoute} from '@angular/router';
 export class RouteComponent implements OnInit {
 
   id:any
+  files:any
 
   constructor(private route: ActivatedRoute) {
     this.route.params.subscribe(params=>{
     //  document.write(params["id"])
      this.id= params["id"]
+     this.files= params["files"]
     })
    }
 

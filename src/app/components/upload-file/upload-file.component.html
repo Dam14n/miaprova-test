@@ -3,7 +3,7 @@
 <form [formGroup]="form" class="form">
     <h4>Select Route and File</h4>
     <div>
-        <input type="text" id="route" formControlName="route" placeholder="Route">
+        <input type="text" id="route" formControlName="route" placeholder="Route" (change)="captureRoute($event)">
     </div>
     <div class="button-file">
 
@@ -12,5 +12,7 @@
     </div>
     <div>
         <button [disabled]="form.invalid" (click)="uploadFile()">Send</button>
+
     </div>
 </form>
+<a [routerLink]="['/route', routes[i] ]" *ngFor="let route of routes; index as i">{{routes[i]}}</a>

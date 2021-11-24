@@ -23,6 +23,7 @@ import { ButtonComponent } from './components/button/button.component';
 import { UploadFileComponent } from './components/upload-file/upload-file.component';
 import { HomeComponent } from './components/home/home.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { RouteComponent } from './components/route/route.component';
 
 
 
@@ -47,6 +48,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     ButtonComponent,
     UploadFileComponent,
     HomeComponent,
+    RouteComponent,
   
     
     

@@ -8,6 +8,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class UploadFileComponent implements OnInit {
 
+  public routes:any = [];
   public files:any =[];
   public form!: FormGroup;
 
@@ -19,11 +20,18 @@ export class UploadFileComponent implements OnInit {
       file:['', Validators.required]
     });
   }
+
+ 
+  captureRoute(event:any){
+    const capturedRoute = (event.target as HTMLTextAreaElement).value;
+    this.routes.push(capturedRoute);
+    console.log(capturedRoute);
+  }
   
   captureFile(event:any){
-      const capturedFile = event.target.files[0]
-      this.files.push(capturedFile)
-      console.log(capturedFile)
+    const capturedFile = event.target.files;
+    this.files.push(capturedFile);
+    console.log(capturedFile);
   }
 
   uploadFile(){

@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
@@ -12,7 +13,7 @@ export class UploadFileComponent implements OnInit {
   public files:any =[];
   public form!: FormGroup;
 
-  constructor(private formBuilder: FormBuilder) { }
+  constructor(private formBuilder: FormBuilder, private http: HttpClient ) { }
 
   ngOnInit(): void {
     this.form= this.formBuilder.group({
@@ -41,10 +42,10 @@ export class UploadFileComponent implements OnInit {
         console.log(file);
         formsDats.append('files', file)
       });
-    // this.rest.post('http://localhost:3000/upload', formsDats)
-    // .subscribe(res=>{
-    //     console.log('Respuesta del servidor', res)
-    // })
+    this.http.post('http://localhost:3000/upload', formsDats)
+    .subscribe(res=>{
+        console.log('Respuesta del servidor', res)
+    })
     }catch(e){
       console.log(e)
     }

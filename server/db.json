@@ -94,30 +94,9 @@
       "img": "https://luma.enablementadobe.com/content/luma/us/en/experience/keep-moving/_jcr_content/root/hero_image.coreimg.jpeg"
     }
   ],
-  "upload": [
+  "files": [
     {
       "id": 1
-    },
-    {
-      "id": 2
-    },
-    {
-      "id": 3
-    },
-    {
-      "id": 4
-    },
-    {
-      "id": 5
-    },
-    {
-      "id": 6
-    },
-    {
-      "id": 7
-    },
-    {
-      "id": 8
     }
   ]
 }

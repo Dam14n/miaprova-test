@@ -11,7 +11,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class UploadFileComponent implements OnInit {
   
   public route= "";
-  public files:any =[];
+  public files: any = [];
   public form!: FormGroup;
 
   constructor(private formBuilder: FormBuilder, private fileSvc: FileService ) { }
@@ -23,30 +23,19 @@ export class UploadFileComponent implements OnInit {
     });
   }
 
- 
-  
-  captureFile(event:any){
-    const capturedFile = event.target.files;
-    this.files.push(capturedFile);
-    console.log(capturedFile);
+  captureFile(e:any){
+    this.files = e.target.files;
+
   }
 
   uploadFile(){
-    try{
-      const formsDats = new FormData();
-      this.files.forEach( (file: File) => {
-        console.log(file);
-        formsDats.append('files', file)
-      });
-    this.fileSvc.uploadFile(formsDats)
-    .subscribe(res=>{
-        console.log('Respuesta del servidor', res);
-        this.route = "";
-        this.files=[];
-    })
-    }catch(e){
-      console.log(e)
+    let formData = new FormData();
+    for(let i = 0; i< this.files.length; i++){
+      formData.append("upload[]", this.files[i], this.files[i].name);
     }
+    // formData.append("uploads[]", this.files, this.files.name);
+    this.fileSvc.uploadFile(formData).subscribe( res=> {console.log("Resp onse:", res)}
+    )
   }
 }
 

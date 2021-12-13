@@ -1,5 +1,5 @@
 {
-    "name": "my-app",
+    "name": "miaprova-test",
     "version": "0.0.0",
     "scripts": {
         "ng": "ng",
@@ -10,8 +10,8 @@
         "serverAPI": "json-server --watch server/db.json --port 3000",
         "e2e": "ng e2e",
         "lite": "lite-server",
-        "postinstall": "ng build --prod",
-        "deploy": "ng build --prod --base-href=/miaprova-test/"
+        "postinstall": "ng build",
+        "deploy": "ng build --base-href=/miaprova-test/"
     },
     "private": true,
     "dependencies": {

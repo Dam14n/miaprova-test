@@ -6,13 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit {
-  rideToTheTop= "Ride To The Top"
-  displayArrowUp= true
+  logo = "assets/logo.png"
+
   constructor() { }
 
   ngOnInit(): void {
-  }
-  scrollTop():void{
-    window.scrollTo(0,0)
   }
 }

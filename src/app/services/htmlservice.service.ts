@@ -11,6 +11,6 @@ export class HTMLserviceService {
   constructor(private http: HttpClient) { }
 
   getHTML(){
-    return this.http.get('assets/prueba.html', { responseType: 'text' })
+    return this.http.get(this.path, { responseType: 'text' })
   }
 }

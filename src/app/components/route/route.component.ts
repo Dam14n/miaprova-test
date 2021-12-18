@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { DomSanitizer } from '@angular/platform-browser';
 import {ActivatedRoute} from '@angular/router';
 import { HTMLserviceService } from 'src/app/services/htmlservice.service';
-import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-route',
@@ -11,24 +11,20 @@ import { HttpClient } from '@angular/common/http';
 export class RouteComponent implements OnInit {
 
   id:any;
-  files:any;
-  HTML:string = "";
+  HTML:any = "";
  
-
-  constructor(private route: ActivatedRoute, private HTMLsvc: HTMLserviceService, private http: HttpClient ) {
+  constructor(private route: ActivatedRoute, private HTMLsvc: HTMLserviceService, private sanitized: DomSanitizer) {
     this.route.params.subscribe(params=>{
      this.id= params["id"]
-     this.files= params["files"]
     })
     
    this.HTMLsvc.getHTML().subscribe(data =>{
-     this.HTML = data
+     this.HTML = this.sanitized.bypassSecurityTrustHtml(data);
    })
 }
 
   ngOnInit(): void {
   }
-
 
 
 };

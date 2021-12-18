@@ -13,7 +13,6 @@ export class RouteComponent implements OnInit {
 
   constructor(private route: ActivatedRoute) {
     this.route.params.subscribe(params=>{
-    //  document.write(params["id"])
      this.id= params["id"]
      this.files= params["files"]
     })

@@ -33,7 +33,6 @@ export class UploadFileComponent implements OnInit {
     for(let i = 0; i< this.files.length; i++){
       formData.append("upload[]", this.files[i], this.files[i].name);
     }
-    // formData.append("uploads[]", this.files, this.files.name);
     this.fileSvc.uploadFile(formData).subscribe( res=> {console.log("Resp onse:", res)}
     )
   }

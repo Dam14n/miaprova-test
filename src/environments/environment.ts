@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiUrl: "https://my-json-server.typicode.com/dam14n/miaprova-test"
+  apiUrl: "http://localhost:3000"
 };
 
 /*

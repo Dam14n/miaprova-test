@@ -11,8 +11,8 @@ export class FileService {
 
   constructor(private http: HttpClient) { }
 
-  uploadFile(file:FormData){
-    return this.http.post(this.apiUrl, file);
+  uploadFile(file:FormData, route:string){
+    return this.http.post(this.apiUrl + "?route=" + route, file);
   }
 
   getFile():Observable<File[]>{

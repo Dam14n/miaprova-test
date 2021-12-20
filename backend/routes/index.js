@@ -1,15 +1,24 @@
 const express = require('express');
 const router = express.Router();
 const cors = require('cors');
-const multiPart = require('connect-multiparty');
+
+const path = require('path')
+const multer = require('multer')
 
 const whiteList = ["http://localhost:4200"]
 
-const multiPartMiddleware = multiPart({
-    uploadDir: './uploads'
-});
+let storage = multer.diskStorage({
+    destination: (req, file, cb) => {
+        cb(null, './uploads')
+    },
+    filename: (req, file, cb) => {
+        cb(null, req.query.route + path.extname(file.originalname));
+    }
+})
+const upload = multer({ storage: storage });
 
 router.use(cors({ origin: whiteList }));
+router.use(express.json())
 
 router.get('/catalogs', (req, res) => {
     res.send([{
@@ -55,11 +64,8 @@ router.get('/stories', (req, res) => {
     }])
 })
 
-router.post('/api/upload', multiPartMiddleware, (req, res) => {
-    res.json({
-        'message': 'file uploaded successfully!'
-    });
+router.post(`/api/upload`, upload.single('file'), (req, res) => {
+    res.send(req.file)
 });
-
 
 module.exports = router;

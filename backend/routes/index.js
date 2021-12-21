@@ -2,14 +2,14 @@ const express = require('express');
 const router = express.Router();
 const cors = require('cors');
 
-const path = require('path')
-const multer = require('multer')
+const path = require('path');
+const multer = require('multer');
 
-const whiteList = ["http://localhost:4200"]
+const whiteList = ["http://localhost:4200"];
 
 let storage = multer.diskStorage({
     destination: (req, file, cb) => {
-        cb(null, './uploads')
+        cb(null, './uploads');
     },
     filename: (req, file, cb) => {
         cb(null, req.query.route + path.extname(file.originalname));
@@ -18,7 +18,7 @@ let storage = multer.diskStorage({
 const upload = multer({ storage: storage });
 
 router.use(cors({ origin: whiteList }));
-router.use(express.json())
+router.use(express.json());
 
 router.get('/catalogs', (req, res) => {
     res.send([{
@@ -61,11 +61,20 @@ router.get('/stories', (req, res) => {
         "img": "https://luma.enablementadobe.com/content/luma/us/en/experience/keep-moving/_jcr_content/root/hero_image.coreimg.jpeg"
 
 
-    }])
-})
+    }]);
+});
 
 router.post(`/api/upload`, upload.single('file'), (req, res) => {
-    res.send(req.file)
+    res.send(req.file);
+});
+
+//todo api
+
+router.get(`/api/file`, (req, res) => {
+    const fileName = req.query.name;
+    const file = `${__dirname}/../uploads/${fileName}.html`;
+    console.log(file);
+    res.download(file);
 });
 
 module.exports = router;

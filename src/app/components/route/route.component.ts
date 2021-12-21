@@ -18,7 +18,7 @@ export class RouteComponent implements OnInit {
      this.id= params["id"]
     })
     
-   this.HTMLsvc.getHTML().subscribe(data =>{
+   this.HTMLsvc.getHTML(this.id).subscribe(data =>{
      this.HTML = this.sanitized.bypassSecurityTrustHtml(data);
    })
 }

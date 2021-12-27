@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiUrl: "https://myfirstpageserverjs.herokuapp.com"
+  apiUrl: "https://dam14n.github.io/miaprova-test/"
 };

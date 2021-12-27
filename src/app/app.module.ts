@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -20,6 +19,11 @@ import { StoriesComponent } from './components/stories/stories/stories.component
 import { StorieComponent } from './components/stories/storie/storie.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ButtonComponent } from './components/button/button.component';
+import { UploadFileComponent } from './components/upload-file/upload-file.component';
+import { HomeComponent } from './components/home/home.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { RouteComponent } from './components/route/route.component';
+import { FileService } from './services/file.service';
 
 
 
@@ -41,7 +45,11 @@ import { ButtonComponent } from './components/button/button.component';
     StoriesComponent,
     StorieComponent,
     FooterComponent,
-    ButtonComponent
+    ButtonComponent,
+    UploadFileComponent,
+    HomeComponent,
+    RouteComponent,
+  
     
     
     
@@ -53,8 +61,10 @@ import { ButtonComponent } from './components/button/button.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    ReactiveFormsModule,
+  
   ],
-  providers: [],
+  providers: [FileService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

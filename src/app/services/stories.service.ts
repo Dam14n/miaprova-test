@@ -8,7 +8,7 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root'
 })
 export class StoriesService {
-  private apiUrl= environment.apiUrl +"/stories"
+  private apiUrl= environment.apiUrl + "/api/stories"
   constructor(private http: HttpClient) { }
 
   gerStories():Observable<Stories[]>{

@@ -20,7 +20,7 @@ const upload = multer({ storage: storage });
 router.use(cors({ origin: whiteList }));
 router.use(express.json());
 
-router.get('/catalogs', (req, res) => {
+router.get('/api/catalogs', (req, res) => {
     res.send([{
         "id": 1,
         "name": "Chrome Extension",
@@ -44,7 +44,7 @@ router.get('/catalogs', (req, res) => {
     }])
 })
 
-router.get('/stories', (req, res) => {
+router.get('/api/stories', (req, res) => {
     res.send([{
         "id": 1,
         "name": "Begginers Luck",
@@ -67,8 +67,6 @@ router.get('/stories', (req, res) => {
 router.post(`/api/upload`, upload.single('file'), (req, res) => {
     res.send(req.file);
 });
-
-//todo api
 
 router.get(`/api/file`, (req, res) => {
     const fileName = req.query.name;

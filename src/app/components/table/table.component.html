@@ -1,0 +1,10 @@
+<table>
+    <tr>
+        <th>File</th>
+        <th>Route</th>
+    </tr>
+    <tr *ngFor="let file of files">
+        <td>{{file}}</td>
+        <td class="ref"><a href="http://localhost:4200/route/{{file}}">{{file}}</a> </td>
+    </tr>
+</table>

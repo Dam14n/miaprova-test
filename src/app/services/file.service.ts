@@ -8,15 +8,19 @@ import { HttpClient } from '@angular/common/http';
 })
 export class FileService {
 
-  private apiUrl= environment.apiUrl + "/api/upload";
+  private apiUrl= environment.apiUrl ;
 
   constructor(private http: HttpClient) { }
 
   uploadFile(file:FormData, route:string){
-    return this.http.post(this.apiUrl + "?route=" + route, file);
+    return this.http.post(this.apiUrl + "/api/upload" + "?route=" + route, file);
   }
 
   getFile():Observable<File[]>{
-    return this.http.get<File[]>(this.apiUrl);
+    return this.http.get<File[]>(this.apiUrl + "/api/upload");
+  }
+
+  getAll():Observable<any>{
+    return this.http.get(this.apiUrl + "/api/files")
   }
 }

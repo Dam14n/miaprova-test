@@ -9,7 +9,7 @@
     background-color: #0b86ab;
     padding: 30px;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 50px;
     border-radius: 10px;
     color: white;
     box-shadow: 7px 13px 37px #000;
@@ -44,6 +44,16 @@ button {
 
 button:disabled {
     background-color: #55828b;
+}
+
+i {
+    font-size: 40px;
+    text-decoration: none;
+    color: #0b86ab;
+}
+
+i:hover {
+    color: #19a7c4;
 }
 
 button:enabled:hover {

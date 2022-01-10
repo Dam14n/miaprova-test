@@ -20,5 +20,13 @@ export class TableComponent implements OnInit {
   ngOnInit(): void {
 
   };
+ 
+  getRoute(file: string): string {
+    const pointIndex = file.lastIndexOf(".");
+    const name = file.substring(0, pointIndex);
+ 
+    return `http://localhost:4200/route/${name}`;
+  }
+
 
 };

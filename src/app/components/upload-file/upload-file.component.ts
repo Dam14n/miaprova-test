@@ -13,7 +13,7 @@ export class UploadFileComponent implements OnInit {
   public route= "";
   public files: any = [];
   public form!: FormGroup;
-
+ 
   constructor(private formBuilder: FormBuilder, private fileSvc: FileService ) { }
 
   ngOnInit(): void {

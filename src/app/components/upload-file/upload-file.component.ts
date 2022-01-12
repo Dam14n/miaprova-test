@@ -30,9 +30,9 @@ export class UploadFileComponent implements OnInit {
   uploadFile(){
     let formData = new FormData();
     for(let i = 0; i< this.files.length; i++){
-      formData.append("upload[]", this.files[i], this.files[i].name);
+      formData.append( 'file', this.files[i], this.files[i].name);
     }
-    this.fileSvc.uploadFile(formData).subscribe( res=> {console.log("Response:", res)}
+    this.fileSvc.uploadFile(formData, this.route).subscribe( res=> {console.log("Response:", res)}
     )
   }
 }

@@ -1,3 +1,4 @@
+import { environment } from './../../environments/environment.prod';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
@@ -6,11 +7,11 @@ import { Injectable } from '@angular/core';
 })
 export class HTMLserviceService {
 
-  private path:string = "assets/prueba.html"
+  private apiUrl= environment.apiUrl + '/api/file';
   
   constructor(private http: HttpClient) { }
 
-  getHTML(){
-    return this.http.get(this.path, { responseType: 'text' })
+  getHTML(name:String){
+    return this.http.get(this.apiUrl + "?name=" + name, { responseType: 'text' })
   }
 }

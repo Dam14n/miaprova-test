@@ -1,4 +1,5 @@
-import { NgModule } from '@angular/core';
+import { DownloadFormComponent } from './components/download-form/download-form.component';
+import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { RouteComponent } from './components/route/route.component';
@@ -16,6 +17,10 @@ const routes: Routes = [
   {
     path:"route/:id",
     component: RouteComponent
+  },
+  {
+    path:"download-form",
+    component: DownloadFormComponent
   }
 ];
 

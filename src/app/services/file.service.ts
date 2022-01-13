@@ -24,7 +24,7 @@ export class FileService {
     return this.http.get(this.apiUrl + "/api/files")
   }
 
-  uploadName( name:string){
-    return this.http.get(this.apiUrl + "/api/fileParty" + "?name=" + name )
+  uploadName( name:string, ext:string){
+    return this.http.get(this.apiUrl + "/api/fileParty" + "?name=" + name + ext, { responseType: 'text' } )
   }
 }

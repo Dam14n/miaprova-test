@@ -11,6 +11,7 @@ export class DownloadFormComponent implements OnInit {
 
   public form!: FormGroup;
   public fileName="";
+  public ext="";
 
   constructor( private formBuilder: FormBuilder, private fileSvc:FileService) { }
 
@@ -22,8 +23,5 @@ export class DownloadFormComponent implements OnInit {
   }
 
   uploadData(){
-    this.fileSvc.uploadName(this.fileName).subscribe( res=> {console.log("Response:", res)}
-    )
-  }
-
+    this.fileSvc.uploadName(this.fileName, this.ext).subscribe()}
 }

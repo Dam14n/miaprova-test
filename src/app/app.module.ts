@@ -26,6 +26,7 @@ import { RouteComponent } from './components/route/route.component';
 import { FileService } from './services/file.service';
 import { TableComponent } from './components/table/table.component';
 import { DownloadFormComponent } from './components/download-form/download-form.component';
+import { UploadTemplateFormComponent } from './components/upload-template-form/upload-template-form.component';
 
 
 
@@ -53,6 +54,7 @@ import { DownloadFormComponent } from './components/download-form/download-form.
     RouteComponent,
     TableComponent,
     DownloadFormComponent,
+    UploadTemplateFormComponent,
   
     
     

@@ -1,0 +1,13 @@
+<form [formGroup]="form" class="form">
+    <h4>Select Adobe Target client ID and File</h4>
+    <div>
+        <input type="text" id="route" formControlName="route" placeholder="Adobe Target client ID" [(ngModel)]="name">
+    </div>
+    <div class="button-file">
+        <input class="file" id="file" type="file" formControlName="file" (change)="captureFile($event)" accept=".csv, .xls">
+        <label class="file-label" for="file"> Select CSV or EXCEL File</label>
+    </div>
+    <div>
+        <button [disabled]="form.invalid" (click)="uploadFile()">Complete</button>
+    </div>
+</form>

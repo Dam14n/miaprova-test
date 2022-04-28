@@ -8,7 +8,7 @@ import { environment } from 'src/environments/environment';
 })
 export class CatalogsService {
  
-  private apiUrl=  environment.apiUrl + "/api/catalogs"
+  private apiUrl=  "http://localhost:3000/api/catalogs"
   constructor(private http: HttpClient) { }
 
   getCatalogs():Observable<Catalog[]>{

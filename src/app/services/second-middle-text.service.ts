@@ -8,7 +8,7 @@ import { Text } from 'src/interfaces/second-middle-text.interface';
   providedIn: 'root'
 })
 export class SecondMiddleTextService {
-  private apiUrl = environment.apiUrl + "/text"
+  private apiUrl = "http://localhost:3000/text"
   constructor( private http: HttpClient) { }
 
   getSecondMiddleText(): Observable<Text[]>{

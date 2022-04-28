@@ -1,3 +1,4 @@
+import { environment } from 'src/environments/environment';
 import { FileService } from './../../services/file.service';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
@@ -13,6 +14,7 @@ export class UploadFileComponent implements OnInit {
   public route= "";
   public files: any = [];
   public form!: FormGroup;
+  url= environment.apiUrl;
  
   constructor(private formBuilder: FormBuilder, private fileSvc: FileService ) { }
 

@@ -1,3 +1,4 @@
+import { environment } from 'src/environments/environment';
 import { FileService } from './../../services/file.service';
 import { Component, OnInit } from '@angular/core';
 
@@ -9,6 +10,7 @@ import { Component, OnInit } from '@angular/core';
 export class TableComponent implements OnInit {
 
   files = []
+  url= environment.apiUrl;
   
   constructor(private fileSvc: FileService) { 
     this.fileSvc.getAll().subscribe(data=>{
@@ -25,7 +27,7 @@ export class TableComponent implements OnInit {
     const pointIndex = file.lastIndexOf(".");
     const name = file.substring(0, pointIndex);
  
-    return `http://localhost:4200/route/${name}`;
+    return `${this.url}/route/${name}`;
   }
 
 

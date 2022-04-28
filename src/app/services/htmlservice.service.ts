@@ -7,7 +7,7 @@ import { Injectable } from '@angular/core';
 })
 export class HTMLserviceService {
 
-  private apiUrl= environment.apiUrl + '/api/file';
+  private apiUrl= "http://localhost:3000/api/file";
   
   constructor(private http: HttpClient) { }
 

@@ -9,8 +9,8 @@ import { Component, OnInit } from '@angular/core';
 export class TableComponent implements OnInit {
 
   files = []
-  
-  constructor(private fileSvc: FileService) { 
+
+  constructor(private fileSvc: FileService) {
     this.fileSvc.getAll().subscribe(data=>{
       this.files = data;
     });
@@ -20,11 +20,11 @@ export class TableComponent implements OnInit {
   ngOnInit(): void {
 
   };
- 
+
   getRoute(file: string): string {
     const pointIndex = file.lastIndexOf(".");
     const name = file.substring(0, pointIndex);
- 
+
     return `http://localhost:4200/route/${name}`;
   }
 

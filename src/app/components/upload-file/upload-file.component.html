@@ -6,12 +6,11 @@
         <input type="text" id="route" formControlName="route" placeholder="Route" [(ngModel)]="route">
     </div>
     <div class="button-file">
-
         <input class="file" id="file" type="file" formControlName="file" (change)="captureFile($event)" accept=".html">
         <label class="file-label" for="file"> Select HTML File</label>
     </div>
     <div>
         <button [disabled]="form.invalid" (click)="uploadFile()" [routerLink]="['/route', route]">Send</button>
-
     </div>
 </form>
+<app-table></app-table>

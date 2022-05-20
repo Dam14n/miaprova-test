@@ -1,0 +1,40 @@
+table {
+    width: 50%;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 7px 13px 37px #000;
+}
+
+table,
+th,
+td {
+    border: 0.2px solid rgba(129, 129, 129, 0.671);
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+.ref:hover {
+    background-color: #22b8d6;
+}
+
+td {
+    background-color: #19a7c4;
+    color: white;
+    font-weight: 600;
+}
+
+a {
+    color: white;
+    font-weight: 600;
+}
+
+th {
+    background-color: #0b86ab;
+    color: white;
+    font-size: 18px;
+}

@@ -24,6 +24,7 @@ import { HomeComponent } from './components/home/home.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RouteComponent } from './components/route/route.component';
 import { FileService } from './services/file.service';
+import { TableComponent } from './components/table/table.component';
 
 
 
@@ -49,6 +50,7 @@ import { FileService } from './services/file.service';
     UploadFileComponent,
     HomeComponent,
     RouteComponent,
+    TableComponent,
   
     
     

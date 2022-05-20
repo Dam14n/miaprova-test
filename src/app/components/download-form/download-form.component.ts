@@ -23,5 +23,16 @@ export class DownloadFormComponent implements OnInit {
   }
 
   uploadData(){
-    this.fileSvc.uploadName(this.fileName, this.ext).subscribe()}
+    this.fileSvc.uploadName(this.fileName, this.ext).subscribe(res =>{
+        console.log(res);
+        var contentDisposition = res.headers.get('content-disposition');
+        var filename = contentDisposition.split('=')[1].replace(/\"/g, '');
+        console.log(filename);
+        const url= window.URL.createObjectURL(res.body);
+        var link = document.createElement('a');
+        link.href = url;
+        link.download = filename;
+        link.click();
+    });
+  }
 }

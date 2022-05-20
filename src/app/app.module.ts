@@ -53,20 +53,20 @@ import { DownloadFormComponent } from './components/download-form/download-form.
     RouteComponent,
     TableComponent,
     DownloadFormComponent,
-  
-    
-    
-    
-    
 
-    
+
+
+
+
+
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
-  
+
   ],
   providers: [FileService],
   bootstrap: [AppComponent]

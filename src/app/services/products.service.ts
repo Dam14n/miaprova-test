@@ -8,7 +8,7 @@ import { Product } from 'src/interfaces/product.interface';
   providedIn: 'root'
 })
 export class ProductsService {
-  private apiUrl= environment.apiUrl +"/products"
+  private apiUrl= "http://localhost:3000/products"
   constructor(private http: HttpClient) { }
 
   getProduct():Observable<Product[]>{

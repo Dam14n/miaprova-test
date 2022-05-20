@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SubHeaderComponent implements OnInit {
   logo= "assets/logo.png"
+  url= environment.apiUrl;
   
   constructor() { }
   

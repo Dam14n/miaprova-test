@@ -8,7 +8,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class FileService {
 
-  private apiUrl= environment.apiUrl ;
+  private apiUrl= "http://localhost:3000" ;
 
   constructor(private http: HttpClient) { }
 

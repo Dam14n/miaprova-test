@@ -55,20 +55,19 @@ import { UploadTemplateFormComponent } from './components/upload-template-form/u
     TableComponent,
     DownloadFormComponent,
     UploadTemplateFormComponent,
-  
-    
-    
-    
-    
 
-    
+
+
+
+
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
-  
+
   ],
   providers: [FileService],
   bootstrap: [AppComponent]

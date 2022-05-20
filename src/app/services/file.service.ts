@@ -23,4 +23,8 @@ export class FileService {
   getAll():Observable<any>{
     return this.http.get(this.apiUrl + "/api/files")
   }
+
+  uploadName(name:string, ext:string):Observable<any>{
+    return this.http.get(this.apiUrl + "/api/fileParty" + "?name=" + name + ext, { responseType: 'blob', observe: 'response' } )
+  }
 }

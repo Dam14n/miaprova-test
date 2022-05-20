@@ -1,0 +1,20 @@
+<form [formGroup]="form" class="form">
+    <h4>Select</h4>
+    <div class="select-div">
+        <select name="options" id="options" formControlName="options" [(ngModel)]="fileName">
+            <option value= "" selected disabled >Choose an option </option>
+            <option value="first-party ID">first-party ID</option>
+            <option value="second-party ID">second-party ID</option>
+        </select>
+    </div>
+    <div class="select-type-div">
+        <select name="options2" id="options" formControlName="options2" [(ngModel)]="ext">
+            <option value= "" selected disabled>Choose type of the file </option>
+            <option value=".csv">CSV</option>
+            <option value=".xls">EXCEL</option>
+        </select>
+    </div>
+    <div>
+        <button [disabled]="form.invalid" (click)="uploadData()">Generate Template</button>
+    </div>
+</form>

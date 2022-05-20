@@ -25,6 +25,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { RouteComponent } from './components/route/route.component';
 import { FileService } from './services/file.service';
 import { TableComponent } from './components/table/table.component';
+import { DownloadFormComponent } from './components/download-form/download-form.component';
 
 
 
@@ -51,20 +52,21 @@ import { TableComponent } from './components/table/table.component';
     HomeComponent,
     RouteComponent,
     TableComponent,
-  
-    
-    
-    
-    
+    DownloadFormComponent,
 
-    
+
+
+
+
+
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
-  
+
   ],
   providers: [FileService],
   bootstrap: [AppComponent]

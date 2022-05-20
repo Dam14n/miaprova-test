@@ -1,3 +1,4 @@
+import { UploadTemplateFormComponent } from './components/upload-template-form/upload-template-form.component';
 import { DownloadFormComponent } from './components/download-form/download-form.component';
 import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path:"download-form",
     component: DownloadFormComponent
+  },
+  {
+    path:"upload-template-form",
+    component: UploadTemplateFormComponent
   }
 ];
 

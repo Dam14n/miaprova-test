@@ -16,6 +16,10 @@ export class FileService {
     return this.http.post(this.apiUrl + "/api/upload" + "?route=" + route, file);
   }
 
+  newUploadFile(file:FormData, name:string){
+    return this.http.post(this.apiUrl + `/api/excelUpload` + "?name=" + name, file)
+  }
+
   getFile():Observable<File[]>{
     return this.http.get<File[]>(this.apiUrl + "/api/upload");
   }
